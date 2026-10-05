@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sara & Omar — Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+
+<div id="env"><div class="wrap">
+  <div class="half top"></div><div class="half bot"></div>
+  <button id="seal" aria-label="Open invitation"></button>
+  <div id="hint">Tap the seal to open</div>
+</div></div>
+
+<main>
+  <section class="cv cv1" style="background-image:url(images/hero.jpg)">
+    <div class="in1">
+      <p class="pre rv">The wedding of</p>
+      <h1 class="names script rv">Sara<i>&amp;</i>Omar</h1>
+      <p class="dl rv">Friday, 18 December 2026</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <h2 class="script foil rv">You are invited</h2>
+    <p class="lead rv">With hearts full of joy, we would be honored to share this beautiful day with you.</p>
+    <div class="blk rv"><h3 class="script foil">When</h3><p>Friday, 18 December 2026</p><p>Seven in the evening</p></div>
+    <div class="dia"></div>
+    <div class="blk rv"><h3 class="script foil">Where</h3><p>The Grand Ballroom</p><p>New Cairo, Egypt</p></div>
+    <div class="count rv" id="count"></div>
+  </section>
+
+  <section class="card">
+    <img class="garland" src="images/garland.jpg" alt="">
+    <h2 class="script foil rv">The evening</h2>
+    <ul class="tlist rv">
+      <li><time>7:00 pm</time><span>Welcome &amp; drinks</span></li>
+      <li><time>7:30 pm</time><span>The ceremony</span></li>
+      <li><time>8:30 pm</time><span>Dinner</span></li>
+      <li><time>10:00 pm</time><span>First dance</span></li>
+    </ul>
+    <div class="dia"></div>
+    <h2 class="script foil rv" style="font-size:2.2rem">Dress code</h2>
+    <p class="sub rv">Formal, in shades of the garden</p>
+    <div class="sw rv"><div><i style="background:#c9b3d6"></i>Lilac</div><div><i style="background:#6a3d86"></i>Plum</div><div><i style="background:#e6d3a6"></i>Champagne</div></div>
+  </section>
+
+  <section class="cv cv2" style="background-image:url(images/end.jpg)">
+    <div class="in2">
+      <h2 class="script rv">Will you join us?</h2>
+      <p class="sub rv">Kindly reply by 1 December</p>
+      <a class="btn rv" href="#" onclick="this.textContent='Thank you, see you there';return false">Confirm attendance</a>
+      <p class="script sign rv">Sara &amp; Omar</p>
+      <p class="sub rv">With love, always</p>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
