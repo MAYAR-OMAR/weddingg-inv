@@ -1,133 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Ayman &amp; Jana</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#897a9b">
+<title>Eyad &amp; Fatma | Wedding Invitation</title>
+<meta name="description" content="We would love to celebrate with you. Join us on 30 November 2026.">
+<meta name="theme-color" content="#F8F3EC">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://weddingg-inv.vercel.app/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Open Graph (WhatsApp, Facebook, iMessage, Telegram) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Eyad &amp; Fatma">
+<meta property="og:title" content="Eyad &amp; Fatma | Wedding Invitation">
+<meta property="og:description" content="You are invited to celebrate with us on 30 November 2026.">
+<meta property="og:url" content="https://weddingg-inv.vercel.app/">
+<meta property="og:image" content="https://weddingg-inv.vercel.app/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eyad and Fatma wedding invitation, 30 November 2026">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eyad &amp; Fatma | Wedding Invitation">
+<meta name="twitter:description" content="You are invited to celebrate with us on 30 November 2026.">
+<meta name="twitter:image" content="https://weddingg-inv.vercel.app/assets/og-image.jpg">
+
+<script>document.documentElement.classList.add('js','lock')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="locked">
-<main class="stage">
+<body>
 
-  <header class="hero" id="hero">
-    <video id="vid" muted playsinline preload="auto" poster="assets/first.jpg" src="assets/envelope.mp4" aria-hidden="true"></video>
-    <div class="still" id="still"></div>
-    <canvas id="petals" aria-hidden="true"></canvas>
+<div id="gate">
+  <video id="vid" playsinline preload="auto" poster="assets/poster.jpg" src="assets/open.mp4"></video>
+  <button id="openBtn" type="button">Open the invitation</button>
+  <button id="skip" type="button">Skip</button>
+</div>
 
-    <div class="hero-ui">
-      <button class="seal" id="seal" aria-label="Open the invitation"><span>A&amp;J</span></button>
-      <p class="tap">Tap to open</p>
-    </div>
+<div class="col">
+<nav id="dots" aria-label="Invitation pages">
+  <a href="#p1" aria-label="Cover" class="on"></a><a href="#p2" aria-label="Invitation"></a><a href="#p3" aria-label="Date"></a><a href="#p4" aria-label="Photos"></a><a href="#p5" aria-label="RSVP"></a><a href="#p6" aria-label="End"></a>
+</nav>
 
-    <div class="reveal">
-      <p class="lead">You are invited to celebrate</p>
-      <h1 class="names" aria-label="Ayman and Jana">
-        <span class="n n1" aria-hidden="true">Ayman</span>
-        <span class="amp" aria-hidden="true">&amp;</span>
-        <span class="n n2" aria-hidden="true">Jana</span>
-      </h1>
-      <p class="date">11<i></i>11<i></i>2026</p>
-    </div>
-    <a class="hint" href="#invite" aria-label="Scroll to the invitation"><span>Scroll</span><b></b></a>
-  </header>
-
-  <section class="sec s-invite" id="invite">
-    <div class="flora mid"></div>
-    <div class="in">
-      <div class="mono"><span>A&amp;J</span></div>
-      <h2>With love, we invite you to share our day</h2>
-      <div class="orn"><i></i></div>
-      <p>Together with their families, Ayman and Jana request the pleasure of your company as they celebrate the beginning of their life together.</p>
-      <p class="fam">Your presence is the gift we are hoping for.</p>
-    </div>
-  </section>
-
-  <section class="sec s-big dark" aria-label="The date">
-    <div class="bignum" id="bignum" aria-label="11 November 2026">
-      <span class="num n1" id="n1">11</span>
-      <span class="mo" aria-hidden="true">November</span>
-      <span class="num n2" id="n2">11</span>
-    </div>
-    <p class="dayline">A Wednesday evening in <b>2026</b></p>
-    <div class="count" id="count" role="timer" aria-live="off">
-      <div><b id="d">0</b><span>days</span></div>
-      <div><b id="h">00</b><span>hours</span></div>
-      <div><b id="m">00</b><span>minutes</span></div>
-      <div><b id="s">00</b><span>seconds</span></div>
-    </div>
-    <p class="done" id="done">Today is the day.</p>
-  </section>
-
-  <div class="band" aria-hidden="true"><div class="trk">
-    <span>Ayman &amp; Jana</span><span>11.11.2026</span><span>Ayman &amp; Jana</span><span>11.11.2026</span>
-    <span>Ayman &amp; Jana</span><span>11.11.2026</span><span>Ayman &amp; Jana</span><span>11.11.2026</span>
-  </div></div>
-
-  <section class="sec s-day">
-    <div class="in">
-      <h2>How our evening unfolds</h2>
-      <div class="tl" id="tl">
-        <div class="fill" id="fill"></div>
-        <div class="ev"><time>7:00<small>pm</small></time><div><h3>Welcome</h3><p>Arrive, find your seat, and enjoy the first toast.</p></div></div>
-        <div class="ev"><time>8:00<small>pm</small></time><div><h3>The ceremony</h3><p>The moment we say yes, in front of the people we love.</p></div></div>
-        <div class="ev"><time>9:00<small>pm</small></time><div><h3>Dinner</h3><p>A long table, good food, and many stories.</p></div></div>
-        <div class="ev"><time>10:30<small>pm</small></time><div><h3>First dance</h3><p>Then the floor is yours until late.</p></div></div>
+<section class="cover" id="p1">
+  <div class="inner">
+    <p class="invite rv" style="--d:.2s">With hearts full of joy,<br>we invite you to our wedding</p>
+    <h1 class="names rv" style="--d:.5s">Eyad<span class="amp">&amp;</span>Fatma</h1>
+    <p class="date rv" style="--d:.9s" id="dateLine"></p>
+    <div class="rv" style="--d:1.2s" id="cdWrap">
+      <div class="cd" id="cd" role="timer" aria-live="off">
+        <div><b id="cdD">00</b><span>Days</span></div>
+        <div><b id="cdH">00</b><span>Hours</span></div>
+        <div><b id="cdM">00</b><span>Min</span></div>
+        <div><b id="cdS">00</b><span>Sec</span></div>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="more rv" style="--d:1.8s">Keep going
+    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="#B8985A" stroke-width="1.6" stroke-linecap="round"><path d="M1 1l8 7 8-7"/></svg>
+  </div>
+</section>
 
-  <section class="sec s-venue dark">
-    <div class="in">
-      <h2>Where we will be</h2>
-      <div class="orn"><i></i></div>
-      <div class="map" aria-hidden="true">
-        <svg viewBox="0 0 380 304" preserveAspectRatio="xMidYMid slice" fill="none">
-          <g stroke="#d9bb7a" stroke-opacity=".28" stroke-width="1">
-            <circle cx="190" cy="150" r="46"/><circle cx="190" cy="150" r="96"/><circle cx="190" cy="150" r="150"/><circle cx="190" cy="150" r="210"/>
-            <path d="M-10 230 C80 190 120 240 200 200 S330 120 400 150"/>
-            <path d="M60 -10 C90 80 150 100 170 150 S230 260 210 320"/>
-            <path d="M-10 70 L120 120 L260 60 L400 100" stroke-opacity=".18"/>
-          </g>
-          <g class="pin">
-            <path d="M190 178c-16-22-27-36-27-52a27 27 0 0 1 54 0c0 16-11 30-27 52z" fill="#d9bb7a"/>
-            <circle cx="190" cy="126" r="10" fill="#2d1747"/>
-          </g>
-          <ellipse cx="190" cy="184" rx="16" ry="4" fill="#000" opacity=".25"/>
-        </svg>
-      </div>
-      <p class="venue-name">The Grand Hotel</p>
-      <p class="venue-sub">Cairo, Egypt</p>
-      <a class="btn" id="maps" href="#" target="_blank" rel="noopener">Open in Maps</a>
+<section class="verse" id="p2">
+  <p class="ayah" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+  <p class="sd" lang="ar" dir="rtl">صدق الله العظيم</p>
+  <p class="txt">After years of love and companionship, we have decided to begin our story together. It would mean the world to have you beside us on the most beautiful night of our lives.</p>
+  <p class="lat">Eyad &amp; Fatma</p>
+  <svg class="flap" viewBox="0 0 480 68" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 0H480L240 68Z" fill="#CFE0EC"/>
+    <path d="M0 0L240 68L480 0" fill="none" stroke="#B8985A" stroke-width="1.6" opacity=".8"/>
+    <path d="M0 -4L240 58L480 -4" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="1 7" stroke-linecap="round" opacity=".8"/>
+  </svg>
+  <div class="seal" aria-hidden="true">E&amp;F</div>
+</section>
+
+<section class="when" id="p3">
+  <div class="deco vl"></div><div class="deco vr"></div>
+  <h2 class="t">Save the date</h2>
+  <p class="sub" id="whenLine"></p>
+  <div class="cal"><div class="mo">November 2026</div><div class="grid" id="grid"></div></div>
+  <div class="info">
+    <div><small>Time</small><b id="timeTxt"></b></div>
+    <div><small>Venue</small><b id="venueTxt"></b></div>
+  </div>
+  <div class="btns">
+    <a class="btn fill" id="mapBtn" target="_blank" rel="noopener">Open map</a>
+    <a class="btn" id="calBtn" target="_blank" rel="noopener">Add to calendar</a>
+  </div>
+</section>
+
+<section class="gallery" id="p4">
+  <div class="rg"></div>
+  <h2 class="t">Our moments</h2>
+  <p class="sub">A few pages from our story</p>
+  <div class="gal">
+    <div class="c">
+      <div class="arch"><button class="slot has" type="button" aria-label="Open photo 1"><img src="assets/photos/1.jpg" alt="Eyad and Fatma" style="object-position:58% 75%" loading="lazy" decoding="async"></button></div>
+      <div class="pol r1"><div class="ph"><button class="slot has" type="button" aria-label="Open photo 2"><img src="assets/photos/2.jpg" alt="Eyad and Fatma" style="object-position:50% 22%" loading="lazy" decoding="async"></button></div><div class="cap">Just us</div></div>
     </div>
-  </section>
-
-  <section class="sec s-dress">
-    <div class="in">
-      <h2>Dress code</h2>
-      <p>Formal. If you like, wear the colors of our day.</p>
-      <div class="sw">
-        <div><i style="background:#e4d4f3"></i><span>Lilac</span></div>
-        <div><i style="background:#b98fd8"></i><span>Orchid</span></div>
-        <div><i style="background:#6a43a0"></i><span>Violet</span></div>
-        <div><i style="background:#2d1747"></i><span>Aubergine</span></div>
-        <div><i style="background:#d9bb7a"></i><span>Champagne</span></div>
-      </div>
+    <div class="c">
+      <div class="oval"><button class="slot has" type="button" aria-label="Open photo 3"><img src="assets/photos/3.jpg" alt="Eyad and Fatma" style="object-position:50% 30%" loading="lazy" decoding="async"></button></div>
+      <div class="pol r2"><div class="ph"><button class="slot has" type="button" aria-label="Open photo 4"><img src="assets/photos/4.jpg" alt="Eyad and Fatma" style="object-position:50% 30%" loading="lazy" decoding="async"></button></div><div class="cap">Always</div></div>
     </div>
-  </section>
+  </div>
+  <div class="wide">
+    <div class="bl b1"></div><div class="bl b2"></div>
+    <div class="ph"><button class="slot has" type="button" aria-label="Open photo 5"><img src="assets/photos/5.jpg" alt="Eyad and Fatma" style="object-position:50% 50%" loading="lazy" decoding="async"></button></div>
+  </div>
+  <p class="cap2">and tomorrow, together</p>
+  <div class="solo"><button class="slot has" type="button" aria-label="Open photo 6"><img src="assets/photos/6.jpg" alt="Eyad and Fatma" style="object-position:50% 22%" loading="lazy" decoding="async"></button></div>
+</section>
 
-  <section class="sec s-end dark">
-    <div class="in">
-      <div class="nm">Ayman &amp; Jana</div>
-      <div class="dt">11.11.2026</div>
-      <p class="thx">We cannot wait to celebrate with you.</p>
+<section class="rsvp" id="p5">
+  <h2 class="t">Will you join us?</h2>
+  <p class="sub">Let us know on WhatsApp</p>
+  <div class="btns">
+    <a class="btn fill" id="yesBtn" target="_blank" rel="noopener">Joyfully accept</a>
+    <a class="btn" id="noBtn" target="_blank" rel="noopener">Regretfully decline</a>
+  </div>
+  <div class="dress">
+    <p>The colors of our night, if you would like to match</p>
+    <div class="sw">
+      <div><i style="background:#CFE0EC"></i>Powder blue</div>
+      <div><i style="background:#F8F3EC"></i>Ivory</div>
+      <div><i style="background:#9DAE94"></i>Sage</div>
+      <div><i style="background:#B8985A"></i>Gold</div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
-<script src="script.js"></script>
+<section class="end" id="p6">
+  <div class="deco vl"></div><div class="deco vr"></div>
+  <div class="rg"></div>
+  <p class="names" style="position:relative">Eyad<span class="amp">&amp;</span>Fatma</p>
+  <p class="thanks">Thank you for being part of our day</p>
+  <p class="tag">30 November 2026</p>
+</section>
+</div>
+
+<div id="lb" role="dialog" aria-label="Photo viewer"><img alt=""></div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
