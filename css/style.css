@@ -32,7 +32,7 @@ h1,h2,h3,p{margin:0}
 #skip.show{opacity:1;pointer-events:auto}
 
 /* ---------- 1. cover ---------- */
-.cover{min-height:120svh;background:var(--cover) center top/cover no-repeat,var(--ivory)}
+.cover{min-height:140svh;background:var(--cover) center top/cover no-repeat,var(--ivory)}
 .cover .inner{position:absolute;top:30.5%;left:0;right:0;text-align:center;padding:0 22px}
 .invite{font-size:clamp(15px,4.2vw,18px);color:var(--soft);line-height:1.7}
 .names{font-family:var(--script);font-size:clamp(46px,14vw,66px);line-height:1.05;color:var(--slate);margin:8px 0 2px;font-weight:700}
